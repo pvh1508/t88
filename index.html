@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <!-- content form -->
+    <div class="content"> 
+
+        <div class="left">
+            <img src="/landingchoit88/banner.png" alt="banner">
+        </div>
+
+        <div class="logo">
+            <img src="/landingchoit88/Logo.png" alt="logo">
+        </div>
+        <div class="text-name">
+            <img src="/landingchoit88/Text1.png" alt="text-name">
+        </div>
+        <!-- form -->
+        <div class="form_content">
+
+            <div class="form">
+                <div class="loginT">
+                    <div id="login1"><img src="/landingchoit88/dangnhap1.png"></div>
+                    <div id="signup"><img src="/landingchoit88/dangky.png"></div>
+                </div>
+                    
+                <div class="signupT">
+                    <div id="login"><img src="/landingchoit88/dangnhap.png"></div>
+                    <div id="signup1"><img src="/landingchoit88/dangky1.png"></div>
+                </div>
+            </div>
+            
+                <div class="login-form">
+                    <input class="w3-input w3-border w3-round" type="text" placeholder="Tên đăng nhập hoặc SDT" class="input"><br />
+                    <input class="w3-input w3-border w3-round" type="password" placeholder="Mật khẩu" class="input">
+                    <div id="btnLogin"><a href="#"><img src="/landingchoit88/buttonDangNhap.png"></a></div>
+                </div>
+
+                <div class="fb-gg">
+                    <a href="#" id="#"><img src="/landingchoit88/FBLogin.png"></a>
+                    <a href="#" id="#"><img src="/landingchoit88/GoogleLogin.png"></a>
+                </div>
+
+                <div class="signup-form">
+                    <input class="w3-input w3-border w3-round" type="text" placeholder="Tên đăng nhập hoặc SDT" class="input"><br />
+                    <input class="w3-input w3-border w3-round" type="text" placeholder="Tên hiển thị" class="input"><br />
+                    <input class="w3-input w3-border w3-round" type="password" placeholder="Mật khẩu" class="input"><br />
+                    <input class="w3-input w3-border w3-round" type="text" placeholder="Mã mời" class="input">
+                    <div id="imgSignup"><a href="#"><img src="/landingchoit88/buttonDangky.png"></a></div>
+                </div>
+                <div class="hover_bkgr_fricc">
+                    <span class="helper"></span>
+                    <div>
+                        <p style=" color: #f9fd05;
+                        font-size: 25px;
+                        font-weight: bold;
+                        font-family: Times New Roman, Times, serif;">Hãy tải game trên App store!</p>
+                        <div class="popupCloseButton">OK</div>
+                    </div>
+                </div>
+
+        </div>
+
+
+        <div class="right">
+            <div class="logo-right">
+                <img src="/landingchoit88/buttonBoard.png" alt="logo-right">
+            </div>
+            <div class="appstore">
+                <a href="https://apps.apple.com/vn/app/t88-classify/id1518771151?l=vi" target="_blank"><img src="/landingchoit88/appstore1.png" alt="app store"></a>
+            </div>
+            <!-- pupop -->
+            <div class="dl_Ipa">
+                <a class="popup"><img src="/landingchoit88/downloadIPA.png" alt="downloadIPA"></a> 
+            </div>
+            <div class="chplay">
+                <a><img src="/landingchoit88/CHPlay.png" alt="ch play"></a>
+            </div>
+            <div class="dl_Apk">
+                <a><img src="/landingchoit88/downloadAPK.png" alt="downloadAPK"></a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/T88-C%E1%BB%95ng-Game-Qu%E1%BB%91c-T%E1%BA%BF" target="_blank"><img src="/landingchoit88/facePage.png" alt="fb"></a>
+            </div>
+            <div class="telegram">
+                <a href="https://t.me/t88gameslot" target="_blank"><img src="/landingchoit88/telePage.png" alt="telegram"></a>
+            </div>
+        </div>
+
+    </div><!-- content form -->
+
+    
+
+
+
+    <script>
+    $(".signupT").hide();
+    $(".signup-form").hide();
+
+    $(document).ready(function(){
+        $("#signup").click(function(){
+            $(".loginT").hide();
+            $(".signupT").show();
+            $(".signup-form").show();
+            $(".login-form").hide();
+            $(".fb-gg").hide();
+        });
+
+        $("#login").click(function(){
+            $(".signupT").hide();
+            $(".loginT").show();
+            $(".signup-form").hide();
+            $(".login-form").show();
+            $(".fb-gg").show();
+
+        });
+    });
+
+    // popup
+    $(document).ready(function () {
+    $(".popup").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    });
+    </script>
+</body>
+</html>
